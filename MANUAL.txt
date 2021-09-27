@@ -1,0 +1,133 @@
+=========================================================================================================================================================================================================================================================================================================================================
+ITALIANO
+
+MANUALE 
+DFA Automaton - Progetto del corso di LFT - Versione 1.4.4
+
+LISTATO DELLE OPZIONI E ATTIVITÀ CHE SVOLGONO
+1)
+Il DFA riconosce il linguaggio delle stringhe di 0 e 1 che non contengono 3 zeri consecutivi
+
+2)
+Il DFA riconosce il linguaggio degli identificatori in un linguaggio in stile Java: 
+come identificatore si intende una sequenza non vuota di lettere, numeri, ed il
+simbolo di “underscore” '_' che non comincia con un numero e che non può essere composto solo
+dal simbolo '_'.
+
+3)
+Il DFA riconosce il linguaggio di stringhe che
+contengono un numero di matricola seguito (subito) da un cognome, dove la combinazione di
+matricola e cognome corrisponde a studenti del turno 2 o del turno 3 del laboratorio di Linguaggi
+Formali e Traduttori. 
+Regole per suddivisione di studenti in turni:
+• Turno T1: cognomi la cui iniziale è compresa tra A e K, e il numero di matricola è dispari;
+• Turno T2: cognomi la cui iniziale è compresa tra A e K, e il numero di matricola è pari;
+• Turno T3: cognomi la cui iniziale è compresa tra L e Z, e il numero di matricola è dispari;
+• Turno T4: cognomi la cui iniziale è compresa tra L e Z, e il numero di matricola è pari.
+
+4)
+Il DFA riconosce le combinazioni di matricola e cognome di studenti del turno 2 o del turno 3 del laboratorio,
+dove il numero di matricola e il cognome possono essere separati da una sequenza di spazi, e possono essere
+precedute e/o seguite da sequenze eventualmente vuote di spazi.
+
+5)
+Il DFA, come in opzione 3, riconosce il linguaggio di stringhe che contengono matricola e cognome 
+di studenti del turno 2 o del turno 3 del laboratorio, ma in cui il cognome precede il numero di matricola 
+(in altre parole, le posizioni del cognome e matricola sono scambiate rispetto all’opzione 3)
+
+6)
+Il DFA riconosce il linguaggio dei numeri binari (stringhe di 0 e 1) il cui valore è multiplo di 3.
+
+7)
+Il DFA usa un alfabeto {a, b} e riconosce il linguaggio delle stringhe tali che 'a' occorre almeno una volta in una delle prime tre posizioni della stringa.
+Il DFA accetta anche stringhe che contengono meno di tre simboli (ma almeno uno deisimboli deve essere 'a').
+
+8)
+Il DFA usa un alfabeto {a, b} e riconosce il linguaggio delle stringhe tali che 'a' occorre almeno una volta in una delle ultime tre posizioni della stringa.
+Come nell’opzione 7, il DFA deve accettare anche stringhe che contengono meno di tre simboli (ma almeno uno dei simboli deve essere 'a').
+
+9)
+Il DFA riconosce il linguaggio di stringhe che contengono il tuo nome e tutte le stringhe ottenute dopo la sostituzione di un carattere del nome
+con un altro qualsiasi. 
+
+10)
+Il DFA usa un alfabeto {/, *, a} e riconosce il linguaggio di “commenti” delimitati da /* (all’inizio) e */ (alla fine): 
+cioè l’automa deve accettare le stringhe che contengono almeno 4 caratteri che iniziano con /*, che finiscono con */, 
+e che contengono una sola occorrenza della sequenza */, quella finale 
+(dove l’asterisco della sequenza */ non deve essere in comune con quello della sequenza /* all’inizio).
+
+11)
+Il DFA usa un alfabeto {/, *, a} e riconosce il linguaggio di stringhe che contengono “commenti” delimitati da /* e */, 
+ma con la possibilità di avere stringhe prima e dopo come specificato qui di seguito. 
+L’idea è che sia possibile avere eventualmente commenti (anche multipli) immersi in una sequenza di simboli dell’alfabeto. 
+Quindi l’unico vincolo `e che l’automa deve accettare le stringhe in cui un’occorrenza della sequenza /* deve essere seguita 
+(anche non immediatamente) da un’occorrenza della sequenza */. 
+Le stringhe del linguaggio possono non avere nessuna occorrenza della sequenza /* (caso della sequenza di simboli senza commenti).
+
+
+=========================================================================================================================================================================================================================================================================================================================================
+ENGLISH
+
+MANUAL
+DFA Automaton - LFT course project - Version 1.4.4
+
+LIST OF OPTIONS AND ACTIVITIES UNDERTAKEN
+1)
+The DFA recognizes the language of strings of 0s and 1s that do not contain 3 consecutive zeros
+
+2)
+The DFA recognizes the language of identifiers in a Java-style language:
+as identifier we mean a non-empty sequence of letters, numbers, and the
+underscore symbol '_' that does not start with a number and cannot be composed alone
+by the symbol '_'.
+
+3)
+The DFA recognizes the string language that
+contain a serial number followed (immediately) by a surname, where the combination of
+matriculation and surname correspond to students of shift 2 or shift 3 of the Language laboratory
+Formals and Translators.
+Rules for dividing students into shifts:
+• Turn T1: surnames whose initial is between A and K, and the registration number is odd;
+• Turn T2: surnames whose initial is between A and K, and the registration number is even;
+• Round T3: surnames whose initial is between L and Z, and the registration number is odd;
+• Round T4: surnames whose initial is between L and Z, and the registration number is even.
+
+4)
+The DFA recognizes the combinations of matriculation and surname of students of shift 2 or shift 3 of the laboratory,
+where the matriculation number and surname can be separated by a sequence of spaces, and they can be
+preceded and / or followed by sequences possibly empty of spaces.
+
+5)
+The DFA, as in option 3, recognizes the language of strings containing matriculation and surname
+of students in shift 2 or shift 3 of the laboratory, but in which the surname precedes the matriculation number
+(in other words, the positions of the surname and serial number are exchanged with respect to option 3)
+
+6)
+The DFA recognizes the language of binary numbers (strings of 0 and 1) whose value is a multiple of 3.
+
+7)
+The DFA uses an alphabet {a, b} and recognizes the string language such that 'a' occurs at least once in one of the first three positions of the string.
+The DFA also accepts strings that contain fewer than three symbols (but at least one of the symbols must be 'a').
+
+8)
+The DFA uses an alphabet {a, b} and recognizes the string language such that 'a' occurs at least once in one of the last three positions of the string.
+As in option 7, the DFA must also accept strings that contain less than three symbols (but at least one of the symbols must be 'a').
+
+9)
+The DFA recognizes the language of strings containing your name and all strings obtained after substituting a character of the name
+with any other.
+
+10)
+The DFA uses an alphabet {/, *, a} and recognizes the language of "comments" delimited by / * (at the beginning) and * / (at the end):
+that is, the automaton must accept strings that contain at least 4 characters starting with / *, ending with * /,
+and which contain only one occurrence of the sequence * /, the final one
+(where the asterisk of the sequence * / must not be in common with that of the sequence / * at the beginning).
+
+11)
+The DFA uses an alphabet {/, *, a} and recognizes the language of strings containing "comments" delimited by / * and * /,
+but with the possibility of having strings before and after as specified below.
+The idea is that it is possible to have comments (even multiple) immersed in a sequence of symbols of the alphabet.
+So the only constraint is that the automaton must accept strings in which an occurrence of the sequence / * must be followed
+(even not immediately) from an occurrence of the sequence * /.
+Language strings may have no occurrence of the sequence / * (case of the symbol sequence without comments).
+
