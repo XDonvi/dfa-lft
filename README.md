@@ -1,5 +1,5 @@
 # Deterministic Finite Automaton 
-LFT course project `Version 1.4.4`
+Linguaggi Formali e Traduttori - [Unito](https://en.unito.it/) course project `Version 1.4.4`
 
 Please read MANUAL.txt for more info about it.
 
