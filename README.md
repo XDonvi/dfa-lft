@@ -3,7 +3,7 @@
 
 Version `1.4.4`
 
-<h5 align="center">=== Proper English Readme Documentation Soon ===</h5>
+<h4>=== Proper English Readme Documentation Soon ===</h5>
 
 For now please refere to MANUAL.txt for more info about it.
 
