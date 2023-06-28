@@ -1,5 +1,4 @@
-# dfa_lft
-Deterministic Finite Automaton - LFT course project - Version 1.4.4
+##Deterministic Finite Automaton - LFT course project - Version 1.4.4
 
 Please read MANUAL.txt for more info about it.
 
