@@ -3,7 +3,9 @@
 
 Version `1.4.4`
 
-Please read MANUAL.txt for more info about it.
+<h5 align="center">=== Proper English Readme Documentation Soon ===</h5>
+
+For now please refere to MANUAL.txt for more info about it.
 
 Author: Eugenio Donvito <br>
 Since: 2019-06-12
